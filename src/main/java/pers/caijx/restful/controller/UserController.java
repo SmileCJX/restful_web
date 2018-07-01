@@ -21,6 +21,7 @@ public class UserController {
         user.setAge(24);
         user.setPassword("123456");
         user.setBirthday(new Date());
+        user.setDesc("hello!!!");
         return user;
     }
 
@@ -31,6 +32,7 @@ public class UserController {
         user.setAge(24);
         user.setPassword("123456");
         user.setBirthday(new Date());
+        user.setDesc("hello springboot");
         return JSONResult.ok(user);
     }
 

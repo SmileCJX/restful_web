@@ -1,5 +1,9 @@
 package pers.caijx.restful.pojo;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+
 import java.util.Date;
 
 /**
@@ -9,20 +13,26 @@ public class User {
 
     private String name;
 
+    @JsonIgnore   //不显示给前端
     private String password;
 
     private Integer age;
 
+    @JsonFormat(pattern="yyyy-MM-dd hh:mm:ss a", locale="zh", timezone="GMT+8")  //格式化
     private Date birthday;
+
+    @JsonInclude(JsonInclude.Include.NON_NULL)  //当为空时是不会显示给前端的
+    private String desc;
 
     public User() {
     }
 
-    public User(String name, String password, Integer age, Date birthday) {
+    public User(String name, String password, Integer age, Date birthday, String desc) {
         this.name = name;
         this.password = password;
         this.age = age;
         this.birthday = birthday;
+        this.desc = desc;
     }
 
     public String getName() {
@@ -57,13 +67,22 @@ public class User {
         this.birthday = birthday;
     }
 
+    public String getDesc() {
+        return desc;
+    }
+
+    public void setDesc(String desc) {
+        this.desc = desc;
+    }
+
     @Override
     public String toString() {
         return "User{" +
-                "name='" + name + '\'' +
-                ", password='" + password + '\'' +
-                ", age=" + age +
+                "desc='" + desc + '\'' +
                 ", birthday=" + birthday +
+                ", age=" + age +
+                ", password='" + password + '\'' +
+                ", name='" + name + '\'' +
                 '}';
     }
 }

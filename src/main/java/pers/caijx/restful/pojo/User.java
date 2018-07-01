@@ -1,4 +1,4 @@
-package pers.caijx.hello.pojo;
+package pers.caijx.restful.pojo;
 
 import java.util.Date;
 

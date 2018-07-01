@@ -1,4 +1,4 @@
-package pers.caijx.hello.pojo;
+package pers.caijx.restful.pojo;
 
 /**
  * Created by caijx on 2018/7/1/001.

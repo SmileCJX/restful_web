@@ -1,9 +1,8 @@
-package pers.caijx.hello.controller;
+package pers.caijx.restful.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -22,6 +21,6 @@ public class OneController {
         String sql = "insert into hello(id,name) values(1,'zhangsan')";
         jdbcTemplate.execute(sql);
         System.out.println("执行完成");
-        return "hello spirng boot";
+        return "restful spirng boot";
     }
 }

@@ -1,9 +1,9 @@
-package pers.caijx.hello.controller;
+package pers.caijx.restful.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import pers.caijx.hello.pojo.Greeting;
+import pers.caijx.restful.pojo.Greeting;
 
 import java.util.concurrent.atomic.AtomicLong;
 

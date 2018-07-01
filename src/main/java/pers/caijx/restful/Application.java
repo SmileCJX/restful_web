@@ -1,4 +1,4 @@
-package pers.caijx.hello;
+package pers.caijx.restful;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

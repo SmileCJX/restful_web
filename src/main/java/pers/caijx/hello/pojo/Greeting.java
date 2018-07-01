@@ -1,7 +1,7 @@
-package pers.caijx.hello;
+package pers.caijx.hello.pojo;
 
 /**
- * Created by Administrator on 2018/7/1/001.
+ * Created by caijx on 2018/7/1/001.
  */
 public class Greeting {
 

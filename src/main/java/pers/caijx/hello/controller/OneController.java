@@ -1,4 +1,4 @@
-package pers.caijx.hello;
+package pers.caijx.hello.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
- * Created by Administrator on 2018/7/1/001.
+ * Created by caijx on 2018/7/1/001.
  */
 @Controller
 public class OneController {

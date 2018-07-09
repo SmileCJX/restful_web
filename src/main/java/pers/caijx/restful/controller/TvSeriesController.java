@@ -23,11 +23,22 @@ public class TvSeriesController {
         LOGGER.info("getALL()被调用 begin");
         List<TvseriesDto> list = new ArrayList<>();
         Calendar cal = Calendar.getInstance();
-        cal.set(2016,Calendar.OCTOBER,2,0,0);
-        list.add(new TvseriesDto(1,"WestLand",1,cal.getTime()));
+        list.add(createWestWorld());
         cal.set(2011,Calendar.SEPTEMBER,2,0,0);
-        list.add(new TvseriesDto(2,"Person of Interest",5,cal.getTime()));
+        list.add(createPoi());
         LOGGER.info("getAll()被调用 end");
         return list;
+    }
+
+    private TvseriesDto createPoi() {
+        Calendar cal = Calendar.getInstance();
+        cal.set(2011,Calendar.SEPTEMBER,2,0,0);
+        return new TvseriesDto(2,"Person of Interest",5,cal.getTime());
+    }
+
+    private TvseriesDto createWestWorld() {
+        Calendar cal = Calendar.getInstance();
+        cal.set(2016,Calendar.OCTOBER,2,0,0);
+        return new TvseriesDto(1,"WestLand",1,cal.getTime());
     }
 }

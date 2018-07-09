@@ -1,5 +1,6 @@
 package pers.caijx.restful.controller;
 
+import org.apache.catalina.servlet4preview.http.HttpServletRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.context.config.ResourceNotFoundException;
@@ -57,6 +58,21 @@ public class TvSeriesController {
         } else {
             throw new ResourceNotFoundException("更新电影异常",null);
         }
+    }
+
+    @DeleteMapping("/{id}")
+    public Map<String,String> deleteOne(@PathVariable int id, HttpServletRequest request,
+                                        @RequestParam(value = "delete_reason",required = false) String deleteReason) {
+        LOGGER.info("deleteOne begin ");
+        Map<String,String> result = new HashMap<>();
+        if (id == 101) {
+            result.put("message","#101被" + request.getRemoteAddr() + "删除（原因：）" + deleteReason + ")");
+        } else if (id == 102) {
+            throw new RuntimeException("#102不能删除");
+        } else {
+            throw new ResourceNotFoundException("删除异常",null);
+        }
+        return result;
     }
 
     private TvseriesDto createPoi() {

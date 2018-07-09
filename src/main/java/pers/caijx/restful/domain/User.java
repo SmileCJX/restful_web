@@ -7,7 +7,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import java.util.Date;
 
 /**
- * Created by caijx on 2018/7/1/001.
+ * Created by  caijx on 2018/7/1/001.
  */
 public class User {
 

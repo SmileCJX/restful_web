@@ -1,7 +1,7 @@
 package pers.caijx.restful.domain;
 
 /**
- * Created by caijx on 2018/7/1/001.
+ * Created by  caijx on 2018/7/1/001.
  */
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;

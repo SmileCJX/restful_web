@@ -2,7 +2,7 @@ package pers.caijx.restful.domain;
 
 /**
  * http请求返回的最外层对象
- * Created by caijx on 2017/9/5/005.
+ * Created by  caijx on 2017/9/5/005.
  */
 public class Result<T>{
 

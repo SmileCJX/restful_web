@@ -1,7 +1,7 @@
 package pers.caijx.restful.domain;
 
 /**
- * Created by caijx on 2018/7/1/001.
+ * Created by  caijx on 2018/7/1/001.
  */
 public class Greeting {
 

@@ -2,9 +2,8 @@ package pers.caijx.restful.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.boot.context.config.ResourceNotFoundException;
+import org.springframework.web.bind.annotation.*;
 import pers.caijx.restful.dto.TvseriesDto;
 
 import java.util.*;
@@ -28,6 +27,25 @@ public class TvSeriesController {
         list.add(createPoi());
         LOGGER.info("getAll()被调用 end");
         return list;
+    }
+
+    @GetMapping("/{id}")
+    public TvseriesDto getOne(@PathVariable int id) {
+        LOGGER.info("getOne " + id + " begin");
+        if (id == 101) {
+            return createWestWorld();
+        } else if (id == 102) {
+            return createPoi();
+        } else {
+            throw new ResourceNotFoundException("找不到哦",null);
+        }
+//        LOGGER.info("getOne " + id + " end");
+    }
+
+    @PostMapping
+    public TvseriesDto insertOne(@RequestBody TvseriesDto tvseriesDto) {
+        tvseriesDto.setId(9999);
+        return tvseriesDto;
     }
 
     private TvseriesDto createPoi() {

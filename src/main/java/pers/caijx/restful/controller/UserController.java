@@ -2,8 +2,8 @@ package pers.caijx.restful.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import pers.caijx.restful.pojo.JSONResult;
-import pers.caijx.restful.pojo.User;
+import pers.caijx.restful.domain.JSONResult;
+import pers.caijx.restful.domain.User;
 
 import java.util.Date;
 

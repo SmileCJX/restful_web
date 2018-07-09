@@ -4,11 +4,11 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import pers.caijx.restful.pojo.JSONResult;
-import pers.caijx.restful.pojo.Resource;
+import pers.caijx.restful.domain.JSONResult;
+import pers.caijx.restful.domain.Resource;
 
 /**
- * Created by Administrator on 2018/7/1/001.
+ * Created by caijx on 2018/7/1/001.
  */
 @RestController
 public class HelloController {

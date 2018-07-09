@@ -18,7 +18,7 @@ public class OneController {
     @RequestMapping("/adduser")
     @ResponseBody
     public String index() {
-        String sql = "insert into hello(id,name) values(1,'zhangsan')";
+        String sql = "insert into t_patient_ext(id,member_name) values(1,'zhangsan')";
         jdbcTemplate.execute(sql);
         System.out.println("执行完成");
         return "restful spirng boot";

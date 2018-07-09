@@ -1,4 +1,4 @@
-package pers.caijx.restful.pojo;
+package pers.caijx.restful.domain;
 
 /**
  * @Description: 自定义响应数据结构
@@ -12,10 +12,11 @@ package pers.caijx.restful.pojo;
  * 				555：异常抛出信息
  * @version V1.0
  */
-import java.util.List;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+
+import java.util.List;
 
 public class JSONResult {
 

@@ -1,4 +1,4 @@
-package pers.caijx.restful.pojo;
+package pers.caijx.restful.domain;
 
 /**
  * Created by caijx on 2018/7/1/001.

@@ -1,4 +1,4 @@
-package pers.caijx.restful.pojo;
+package pers.caijx.restful.domain;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;

@@ -44,8 +44,19 @@ public class TvSeriesController {
 
     @PostMapping
     public TvseriesDto insertOne(@RequestBody TvseriesDto tvseriesDto) {
+        LOGGER.info("insertOne begin");
         tvseriesDto.setId(9999);
         return tvseriesDto;
+    }
+
+    @PutMapping("/{id}")
+    public TvseriesDto updateOne(@PathVariable int id,@RequestBody TvseriesDto tvseriesDto) {
+        LOGGER.info("updateOne begin ");
+        if (id == 101 || id == 102) {
+            return createPoi();
+        } else {
+            throw new ResourceNotFoundException("更新电影异常",null);
+        }
     }
 
     private TvseriesDto createPoi() {

@@ -13,13 +13,13 @@ import pers.caijx.restful.utils.ResultUtil;
 /**
  * Created by caijx on 2018/7/3/003.
  */
-@ControllerAdvice
+//@ControllerAdvice
 public class ExceptionHandle {
 
     private final static Logger LOGGER = LoggerFactory.getLogger(ExceptionHandle.class);
 
-    @ExceptionHandler(value = Exception.class)
-    @ResponseBody
+//    @ExceptionHandler(value = Exception.class)
+//    @ResponseBody
     public Result handle(Exception e) {
         if (e instanceof PatientException) {
             PatientException patientException = (PatientException)e;

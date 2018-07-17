@@ -13,7 +13,7 @@ public class ThymeleafController {
 
     @RequestMapping("/index")
     public String index(ModelMap map) {
-        map.addAttribute("name","templates.thymeleaf-caijx");
+        map.addAttribute("name","thymeleaf-caijx");
         return "thymeleaf/index";
     }
 

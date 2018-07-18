@@ -18,7 +18,7 @@ public class ErrorController {
     @RequestMapping("/error")
     public String error() {
 //        throw new PatientException(ResultEnum.PATIENT_ERROR);
-//        int a =  1 / 0;
+        int a =  1 / 0;
         return "thymeleaf/error";
     }
 

@@ -7,6 +7,7 @@ import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
+ * 自定义响应结构, 转换类
  * Created by caijx on 2018/7/18/018.
  */
 public class JsonUtils {
